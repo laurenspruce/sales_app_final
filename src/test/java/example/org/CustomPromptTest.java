@@ -52,4 +52,20 @@ public class CustomPromptTest {
         assertEquals(3.14, actualValue);
         verify(mockScanner).nextLine();
     }
+
+    @Test
+    public void get_double_should_handle_invalid_input() {
+
+        //Arrange
+        when(mockScanner.nextLine()).thenReturn("Not a number", "2.5");
+
+        //Act
+        double actualValue = cut.getDouble("Enter a double: ");
+
+        //Assert
+        assertEquals(2.5, actualValue);
+        verify(mockScanner, times(2)).nextLine(); //Ensuring the next line has been called twice
+    }
+
+
 }
