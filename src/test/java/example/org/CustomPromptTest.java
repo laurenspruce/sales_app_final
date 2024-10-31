@@ -7,8 +7,7 @@ import org.mockito.Mockito;
 import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class CustomPromptTest {
 
@@ -31,11 +30,26 @@ public class CustomPromptTest {
         when(mockScanner.nextLine()).thenReturn(expectedInput);
 
         //Act
-        String actualInput = cut.getString("Enter a message: ");
+        String actualValue = cut.getString("Enter a message: ");
 
         //Assert
-        assertEquals(expectedInput, actualInput);
+        assertEquals(expectedInput, actualValue);
         verify(mockScanner).nextLine(); //Ensuring nextLine was called
 
+    }
+
+    @Test
+    public void get_double_should_return_parsed_double(){
+
+        //Arrange
+        String expectedInput = "3.14"; //Use the correct input value
+        when(mockScanner.nextLine()).thenReturn(expectedInput);
+
+        //Act
+        double actualValue = cut.getDouble("Enter a double: ");
+
+        //Assert
+        assertEquals(3.14, actualValue);
+        verify(mockScanner).nextLine();
     }
 }
