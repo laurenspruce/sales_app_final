@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80a12dbf-dec2-4e75-ad37-e081ed6fa5ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/jvm.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/CustomPrompt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/ICustomPrompt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/IElementReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/MsgCostReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/MsgQuantityReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/MsgVATReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example/org/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/example/org/AppTest.java" afterDir="false" />
+    <list default="true" id="80a12dbf-dec2-4e75-ad37-e081ed6fa5ae" name="Changes" comment="adding the base files">
+      <change afterPath="$PROJECT_DIR$/src/test/java/example/org/CustomPromptTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2o6vQsBOXIZYXYV1VQc1jumYBdi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,13 +41,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CustomPromptTest.get_string_should_return_input_string">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.org.App" />
       <module name="sales_app_final" />
@@ -76,8 +62,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomPromptTest.get_string_should_return_input_string" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sales_app_final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.org.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="example.org" />
+      <option name="MAIN_CLASS_NAME" value="example.org.CustomPromptTest" />
+      <option name="METHOD_NAME" value="get_string_should_return_input_string" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomPromptTest.get_string_should_return_input_string" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -91,9 +94,20 @@
       <option name="presentableId" value="Default" />
       <updated>1730202830811</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding the base files">
+      <option name="closed" value="true" />
+      <created>1730208292917</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730208292917</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="adding the base files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding the base files" />
   </component>
 </project>
